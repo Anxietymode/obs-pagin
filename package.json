@@ -1,0 +1,23 @@
+{
+  "name": "obs-tuner",
+  "version": "1.0.0",
+  "private": true,
+  "description": "OBS tuner: encoder/bitrate profile, filter chain and drop-frame diagnostics for Twitch streams",
+  "main": "src/cli.js",
+  "bin": {
+    "obs-tuner": "src/cli.js"
+  },
+  "scripts": {
+    "tuner": "node src/cli.js",
+    "doctor": "node src/cli.js doctor",
+    "profile": "node src/cli.js profile",
+    "filters": "node src/cli.js filters",
+    "check": "node src/cli.js check"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "ws": "^8.22.0"
+  }
+}
